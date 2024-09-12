@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Parcel Delivery App</h1>
+
+    <div class="container">
+        <!-- Driver Registration Form -->
+        <div class="form-container" id="driver-registration">
+            <h2>Register Driver</h2>
+            <form id="driver-registration-form">
+                <label for="driver-name">Name:</label>
+                <input type="text" id="driver-name" required>
+                <label for="driver-phone">Phone:</label>
+                <input type="text" id="driver-phone" required>
+                <button type="submit">Register Driver</button>
+            </form>
+            <p id="driver-registration-message"></p>
+        </div>
+
+        <!-- User Registration Form -->
+        <div class="form-container" id="user-registration">
+            <h2>Register User</h2>
+            <form id="user-registration-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Register User</button>
+            </form>
+            <p id="user-registration-message"></p>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <!-- Create Parcel Form -->
+        <div class="form-container">
+            <h2>Create Parcel</h2>
+            <form id="parcel-creation-form">
+                <label for="user-id">User ID:</label>
+                <input type="number" id="user-id" required>
+                <label for="driver-id">Driver ID:</label>
+                <input type="number" id="driver-id" required>
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location" required>
+                <label for="dropoff-location">Dropoff Location:</label>
+                <input type="text" id="dropoff-location" required>
+                <button type="submit">Create Parcel</button>
+            </form>
+            <p id="parcel-creation-message"></p>
+        </div>
+
+        <!-- Track Parcel Form -->
+        <div class="form-container">
+            <h2>Track Parcel</h2>
+            <form id="parcel-tracking-form">
+                <label for="parcel-id">Parcel ID:</label>
+                <input type="number" id="parcel-id" required>
+                <button type="submit">Track Parcel</button>
+            </form>
+            <p id="parcel-tracking-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
